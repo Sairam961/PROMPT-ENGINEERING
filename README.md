@@ -85,9 +85,9 @@ Step 7: Finalize and Export
 - Common approaches include predicting the next token in text, generating images from noise, and learning probability distributions.
 
 3. Generative vs. Discriminative Models
-- Generative Models: Learn the underlying data distribution and generate new samples. They model \\(P(X)\\) or the joint distribution \\(P(X,Y)\\).
+- Generative Models: Learn the underlying data distribution and generate new samples. They model P(X) or the joint distribution P(X,Y).
   - Example: A model that generates realistic human faces.
-- Discriminative Models: Learn to distinguish between classes or predict labels from input data. They typically model \\(P(Y|X)\\).
+- Discriminative Models: Learn to distinguish between classes or predict labels from input data. They typically model P(Y|X).
   - Example: A model that classifies an image as a cat or a dog.
 
 4. Generative Adversarial Networks (GANs)
@@ -108,7 +108,7 @@ Step 7: Finalize and Export
 ### Gemini Response:
 To understand Generative AI fundamentally, we must look at how machine learning models interpret high-dimensional data distributions. Here are the foundational concepts:
 
-* **The Core Objective:** Generative AI learns the underlying statistical distribution (the joint probability, $P(X,Y)$ or simply $P(X)$) of a training dataset. By mapping this complex data manifold, the model can draw mathematical samples from it to synthesize novel data—be it text, images, or code—that shares the fundamental properties of the original training set.
+* **The Core Objective:** Generative AI learns the underlying statistical distribution (the joint probability, $P(X,Y)$ or simply P(X) of a training dataset. By mapping this complex data manifold, the model can draw mathematical samples from it to synthesize novel data—be it text, images, or code—that shares the fundamental properties of the original training set.
 * **Generative vs. Discriminative Models:** The difference lies in their mathematical goals. A *discriminative model* learns the decision boundary between classes (the conditional probability, $P(Y\vert{}X)$). It asks, "Given this input, is it class A or class B?" A *generative model* models the data generation process itself. It asks, "What are the structural rules that constitute class A, and how can I generate a completely new instance of it?" Discriminative models categorize; generative models create.
 * **Variational Autoencoders (VAEs):** An early breakthrough framework. VAEs use an *encoder* network to compress data into a continuous, probabilistic "latent space," and a *decoder* network to reconstruct data from that space. By constraining the latent space to a known distribution (like a standard Gaussian), we can sample random mathematical noise and decode it into coherent, novel outputs.
 * **Generative Adversarial Networks (GANs):** This framework introduced a game-theoretic approach. A GAN pits two neural networks against each other in a zero-sum minimax game: a *Generator* trying to synthesize fake data, and a *Discriminator* trying to distinguish real training data from the fakes. The Generator never sees the real data; it learns entirely from the gradients passed back by the Discriminator, eventually mastering the true data distribution to create highly realistic outputs.
