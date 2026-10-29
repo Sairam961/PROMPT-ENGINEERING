@@ -62,6 +62,7 @@ Step 7: Finalize and Export
 # Generative AI Model Comparison: ChatGPT vs. Gemini
 
 **Objective:** Compare the behavior of different Generative AI models using identical prompts. 
+
 **Tools Evaluated:** ChatGPT and Gemini
 
 ---
