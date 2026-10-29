@@ -70,7 +70,7 @@ Step 7: Finalize and Export
 
 > **Prompt:** Act as a computer science professor. Explain the foundational concepts of Generative AI. Briefly cover the difference between generative and discriminative models, and mention early frameworks like GANs and VAEs. Limit your response to 300 words and use bullet points for clarity.
 
-### ChatGPT Response
+### ChatGPT Response:
 ## Foundational Concepts of Generative AI
 
 1. What is Generative AI?
@@ -104,7 +104,7 @@ Step 7: Finalize and Export
 - Despite its capabilities, it may produce inaccurate information, biased outputs, or synthetic content that requires verification.
 
 
-### Gemini Response
+### Gemini Response:
 To understand Generative AI fundamentally, we must look at how machine learning models interpret high-dimensional data distributions. Here are the foundational concepts:
 
 * **The Core Objective:** Generative AI learns the underlying statistical distribution (the joint probability, $P(X,Y)$ or simply $P(X)$) of a training dataset. By mapping this complex data manifold, the model can draw mathematical samples from it to synthesize novel data—be it text, images, or code—that shares the fundamental properties of the original training set.
@@ -117,7 +117,7 @@ To understand Generative AI fundamentally, we must look at how machine learning 
 
 > **Prompt:** Provide a highly technical explanation of Generative AI architectures, focusing specifically on Transformers. Explain the 'self-attention' mechanism, multi-head attention, and how Transformers solved the vanishing gradient problem found in older RNNs. Limit your response to 300 words.
 
-### ChatGPT Response
+### ChatGPT Response:
 ## Technical Architecture of Generative AI: Transformers
 
 1. Transformer Architecture
@@ -145,7 +145,7 @@ To understand Generative AI fundamentally, we must look at how machine learning 
 - Standard self-attention has (O(n^2) time and memory complexity with sequence length n, motivating efficient attention variants for long contexts.
 
 
-### Gemini Response
+### Gemini Response:
 The Transformer architecture revolutionized Generative AI by discarding sequence-aligned recurrence in favor of a purely attention-based graph structure.
 
 * **Self-Attention Mechanism:** The core engine is Scaled Dot-Product Attention. An input sequence is projected into Query ($Q$), Key ($K$), and Value ($V$) matrices via learned weight parameters. The attention matrix is computed as $\text{softmax}(QK^T / \sqrt{d_k})V$. The dot product $QK^T$ geometrically measures similarity between tokens in high-dimensional space. This allows every token to dynamically weigh its contextual reliance on every other token simultaneously, meaning the word "bank" can instantly contextualize itself using the word "river" located anywhere in the text.
@@ -157,7 +157,7 @@ The Transformer architecture revolutionized Generative AI by discarding sequence
 
 > **Prompt:** What are the real-world applications of modern Generative AI architectures? Provide three distinct examples spanning different domains (e.g., software engineering, digital art, and scientific research like AlphaFold). Explain how the architecture enables each application. Limit your response to 300 words.
 
-### ChatGPT Response
+### ChatGPT Response:
 ## Real-World Applications of Modern Generative AI Architectures
 
 Modern Generative AI uses architectures such as Transformers, diffusion models, and protein structure prediction networks to generate content, automate complex tasks, and accelerate scientific discovery. Three important applications are:
@@ -191,7 +191,7 @@ Modern Generative AI uses architectures such as Transformers, diffusion models, 
 Conclusion: Generative AI architectures transform software development, creative production, and scientific research by learning complex patterns and using them to generate useful outputs or predictions.
 
 
-### Gemini Response
+### Gemini Response:
 Modern Generative AI architectures translate complex high-dimensional distributions into domain-specific applications:
 * **Software Engineering: Autoregressive Code Generation**
 * **Architectural Enabler:** Decoder-only Transformers model formal programming syntax as discrete token sequences. The self-attention mechanism constructs a dynamic dependency graph across distant tokens, tracking variable scope, function signatures, and API imports across large codebases regardless of structural separation.
@@ -210,7 +210,7 @@ Modern Generative AI architectures translate complex high-dimensional distributi
 
 > **Prompt:** Analyze the impact of scaling in Large Language Models (LLMs). Explain the 'Scaling Laws' related to compute, dataset size, and parameters. Also, define 'emergent abilities' and explain why they occur as models get larger. Limit your response to 300 words.
 
-### ChatGPT Response
+### ChatGPT Response:
 ## Impact of Scaling in Large Language Models (LLMs)
 
 1. What Is Scaling in LLMs?
@@ -239,7 +239,7 @@ Empirical scaling laws, including the work of Kaplan et al. (2020) and Hoffmann 
 Conclusion: Effective scaling requires balancing parameters, data, and compute while accounting for training efficiency, inference costs, and diminishing returns.
 
 
-### Gemini Response
+### Gemini Response:
 The impact of scaling in Large Language Models (LLMs) has transformed natural language processing from simple statistical tasks to sophisticated cognitive modeling. Understanding this impact requires examining the empirical scaling laws and the resulting phenomenon of emergent abilities.
 
 ### The Scaling Laws of LLMs
@@ -260,7 +260,7 @@ Examples include:
 
 > **Prompt:** Break down the exact pipeline of how a Large Language Model (LLM) is built from scratch. Your explanation must sequentially cover: Data Collection/Tokenization, Pre-training, Supervised Fine-Tuning (SFT), and Alignment (RLHF). Limit your response to 300 words.
 
-### ChatGPT Response
+### ChatGPT Response:
 ## LLM Development Pipeline: From Scratch to Alignment
 
 Building a Large Language Model (LLM) involves four major stages that transform raw data into a capable, instruction-following AI system.
@@ -306,7 +306,7 @@ Result: A model better aligned with human preferences, helpfulness, and safety e
 Note: Modern systems may also use direct preference optimization (DPO), synthetic data, and additional safety training instead of—or alongside—the classic RLHF pipeline.
 
 
-### Gemini Response
+### Gemini Response:
 Building a Large Language Model (LLM) follows a sequential four-stage engineering pipeline:
 
 1. **Data Collection & Tokenization**
