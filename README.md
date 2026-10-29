@@ -324,14 +324,16 @@ To make the model safe, helpful, and honest, it is aligned with human preference
 
 ## Final Comparison & Analysis
 
-Based on the outputs generated for the five identical prompts, here is the comparative analysis between ChatGPT and Gemini:
+Based on the overall responses generated for the five identical prompts, here is the comparative analysis between the two AI models:
 
-* **Speed:** ChatGPT was noticeably quicker in generating its responses, outputting the text almost instantly. However, it also produced a significantly larger volume of content. Gemini took slightly longer to generate but delivered much more concise and structurally compact answers.
-* **Accuracy:** Both models demonstrated high technical accuracy regarding the foundational concepts of Generative AI, Transformers, and the LLM pipeline (RLHF, Tokenization). Neither model provided factually incorrect technical information.
-* **Creativity:** ChatGPT showcased slightly more creativity in its phrasing and use of analogies (especially when explaining complex topics like "emergent abilities"). Gemini was highly structured and professional, favoring a straightforward, textbook-style delivery over creative flair.
-* **Hallucination:** Neither model hallucinated fake technical concepts or papers. However, regarding prompt constraints, ChatGPT struggled slightly with the strict "300-word limit," often pushing past the boundary to provide extra context. Gemini adhered much more strictly to the brevity and formatting constraints.
-* **Reasoning:** Both models displayed strong logical flow. Gemini’s concise nature made its step-by-step reasoning (such as the pipeline from Pre-training to SFT) highly readable. ChatGPT provided deeper reasoning, thoroughly explaining the "why" behind concepts like the vanishing gradient problem, though it required reading through more text.
-* **Engineering Usefulness:** ChatGPT's verbose and highly detailed outputs are excellent for someone seeking a deep, comprehensive understanding of AI architectures. However, Gemini's concise, heavily bulleted, and constraint-abiding output is arguably more useful for a software engineer looking for quick, actionable documentation and summaries.
+| Evaluation Criteria | ChatGPT Performance | Gemini Performance |
+| :--- | :--- | :--- |
+| **Speed** | Noticeably quicker generation, outputting text almost instantly, though producing a larger volume of content. | Slightly slower generation time, but delivered much more concise and structurally compact answers. |
+| **Accuracy** | Highly accurate; provided factually correct technical information across all complex topics. | Highly accurate; provided factually correct technical information across all complex topics. |
+| **Creativity** | Showcased more creativity in phrasing and use of analogies (e.g., when explaining "emergent abilities"). | Highly structured and professional, favoring a straightforward, textbook-style delivery over creative flair. |
+| **Hallucination** | No technical hallucinations, but occasionally ignored the strict 300-word limit constraint to provide extra context. | No technical hallucinations and strictly adhered to both the 300-word limit and formatting constraints. |
+| **Reasoning** | Provided deeper, more verbose reasoning, thoroughly explaining the "why" behind concepts like the vanishing gradient. | Displayed strong logical flow with concise, step-by-step reasoning that was highly readable and scannable. |
+| **Engineering Usefulness** | Excellent for developers seeking a deep, comprehensive understanding of underlying AI architectures. | Superior for quick, actionable documentation, summaries, and strict adherence to formatting requirements. |
 
 ## Result
 
