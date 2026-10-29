@@ -73,33 +73,33 @@ Step 7: Finalize and Export
 ### ChatGPT Response
 ## Foundational Concepts of Generative AI
 
-\ 1. What is Generative AI?
+1. What is Generative AI?
 - Generative Artificial Intelligence (Generative AI) is a branch of AI that learns patterns and structures from existing data to generate new content.
 - It can create text, images, audio, videos, and computer code.
 - Examples include ChatGPT for text generation and image-generation models for creating pictures from prompts.
   
-\ 2. How Does Generative AI Work?
+2. How Does Generative AI Work?
 - Generative AI models are trained on large datasets to learn the underlying patterns and relationships within the data.
 - During generation, they use these learned patterns to produce new outputs that resemble the training data.
 - Common approaches include predicting the next token in text, generating images from noise, and learning probability distributions.
 
-\- 3. Generative vs. Discriminative Models
+3. Generative vs. Discriminative Models
 - Generative Models: Learn the underlying data distribution and generate new samples. They model \\(P(X)\\) or the joint distribution \\(P(X,Y)\\).
   - Example: A model that generates realistic human faces.
 - Discriminative Models: Learn to distinguish between classes or predict labels from input data. They typically model \\(P(Y|X)\\).
   - Example: A model that classifies an image as a cat or a dog.
 
-\- 4. Generative Adversarial Networks (GANs)
+4. Generative Adversarial Networks (GANs)
 - Introduced by Ian Goodfellow and colleagues in 2014.
 - GANs consist of two neural networks: a generator, which creates synthetic data, and a discriminator, which distinguishes real data from generated data.
 - Both networks compete during training, improving the realism of generated outputs.
 
-\- 5. Variational Autoencoders (VAEs)
+5. Variational Autoencoders (VAEs)
 - VAEs are generative models that learn a compressed, probabilistic representation of input data in a latent space.
 - They consist of an encoder and a decoder. The encoder maps data to a latent distribution, while the decoder generates new samples from it.
 - VAEs are useful for image generation, data reconstruction, and representation learning.
 
-\- 6. Applications and Importance
+6. Applications and Importance
 - Generative AI is used in content creation, healthcare research, education, software development, and design.
 - Despite its capabilities, it may produce inaccurate information, biased outputs, or synthetic content that requires verification.
 
@@ -120,31 +120,31 @@ To understand Generative AI fundamentally, we must look at how machine learning 
 ### ChatGPT Response
 ## Technical Architecture of Generative AI: Transformers
 
-\- 1. Transformer Architecture
+1. Transformer Architecture
 - Introduced in Attention Is All You Need (2017), Transformers replace recurrent processing with attention-based computation.
 - Core components include token embeddings, positional encodings, multi-head self-attention, feed-forward networks, residual connections, and layer normalization.
 - Decoder-only Transformers power autoregressive language models, predicting the next token using previously generated tokens.
 
-\- 2. Self-Attention Mechanism
+2. Self-Attention Mechanism
 - Each input token embedding is linearly projected into three vectors: Query (Q), Key (K), and Value (V).
 - Query–key dot products measure token-to-token relevance. Scaling by \\(\sqrt{d_k}\\) stabilizes gradients before applying softmax.
 \\[ \operatorname{Attention}(Q,K,V)= \operatorname{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V \\]
 - The resulting attention weights combine value vectors, allowing each token to incorporate contextual information from other tokens.
 - Causal masking prevents decoder-only models from attending to future tokens.
 
-\- 3. Multi-Head Attention
+3. Multi-Head Attention
 - Multiple attention heads operate on separate learned projections of the same input.
 - Each head can capture different relationships, such as syntactic dependencies, semantic similarity, or long-range contextual associations.
 - Their outputs are concatenated and linearly projected:
 \\[ \operatorname{MHA}(Q,K,V)= \operatorname{Concat}(H_1,\ldots,H_h)W^O \\]
 \- This enables parallel representation of diverse relationships rather than relying on a single attention distribution.
 
-\- 4. Vanishing Gradients: RNNs vs. Transformers
+4. Vanishing Gradients: RNNs vs. Transformers
 - In conventional RNNs, backpropagation through time repeatedly multiplies gradients by recurrent Jacobians. When their magnitudes are consistently below one, gradients decay exponentially, making long-range dependencies difficult to learn.
 - Transformers eliminate recurrent state transitions. Self-attention provides short computational paths between distant tokens, while residual connections provide direct gradient-flow pathways.
 - Consequently, Transformers substantially mitigate long-range gradient degradation and enable parallel training across sequence positions.
 
-\- 5. Key Limitation
+5. Key Limitation
 - Standard self-attention has \\(O(n^2)\\) time and memory complexity with sequence length \\(n\\), motivating efficient attention variants for long contexts.
 
 
@@ -216,23 +216,23 @@ Modern Generative AI architectures translate complex high-dimensional distributi
 ### ChatGPT Response
 ## Impact of Scaling in Large Language Models (LLMs)
 
-\- 1. What Is Scaling in LLMs?
+1. What Is Scaling in LLMs?
 - Scaling involves increasing a model’s parameter count, training dataset size, and computational resources to improve its performance.
 - Larger models can learn more complex linguistic patterns, represent broader knowledge, and perform sophisticated reasoning tasks, although improvements depend on training quality and architecture.
 
-\- 2. Scaling Laws
+2. Scaling Laws
 - Parameter Scaling: Parameters are the learnable weights of a neural network. Increasing parameter count can improve representational capacity, enabling the model to capture more complex relationships.
 - Dataset Scaling: Training on larger, diverse, high-quality datasets exposes models to more linguistic structures, factual information, and problem-solving patterns. Repeated exposure to limited or low-quality data can constrain performance.
 - Compute Scaling: Compute refers to the processing resources used during training, commonly measured in floating-point operations (FLOPs). More compute enables larger models, more training steps, or broader data exposure.
 
 Empirical scaling laws, including the work of Kaplan et al. (2020) and Hoffmann et al. (2022), show that model loss often follows approximate power-law relationships with compute, parameter count, and dataset size. Chinchilla scaling emphasizes balancing model size with the number of training tokens rather than increasing parameters alone.
 
-\- 3. Emergent Abilities
+3. Emergent Abilities
 - Emergent abilities are capabilities that appear unexpectedly when a model reaches a particular scale, despite being weak or seemingly absent in smaller models.
 - Examples may include multi-step arithmetic, in-context learning, and complex instruction following.
 - These capabilities can arise because larger models develop richer internal representations and combine learned patterns to solve more complex tasks.
 
-\- 4. Why Do Emergent Abilities Occur?
+4. Why Do Emergent Abilities Occur?
 - Greater capacity enables the representation of more intricate relationships.
 - Extensive training exposes models to diverse examples, supporting transfer to unfamiliar tasks.
 - Some evaluations use discrete success thresholds, making gradual improvements in underlying performance appear sudden.
