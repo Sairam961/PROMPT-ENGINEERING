@@ -128,16 +128,13 @@ To understand Generative AI fundamentally, we must look at how machine learning 
 2. Self-Attention Mechanism
 - Each input token embedding is linearly projected into three vectors: Query (Q), Key (K), and Value (V).
 - Query–key dot products measure token-to-token relevance. Scaling by \\(\sqrt{d_k}\\) stabilizes gradients before applying softmax.
-\\[ \operatorname{Attention}(Q,K,V)= \operatorname{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V \\]
-- The resulting attention weights combine value vectors, allowing each token to incorporate contextual information from other tokens.
+ - The resulting attention weights combine value vectors, allowing each token to incorporate contextual information from other tokens.
 - Causal masking prevents decoder-only models from attending to future tokens.
 
 3. Multi-Head Attention
 - Multiple attention heads operate on separate learned projections of the same input.
 - Each head can capture different relationships, such as syntactic dependencies, semantic similarity, or long-range contextual associations.
-- Their outputs are concatenated and linearly projected:
-\\[ \operatorname{MHA}(Q,K,V)= \operatorname{Concat}(H_1,\ldots,H_h)W^O \\]
-\- This enables parallel representation of diverse relationships rather than relying on a single attention distribution.
+- This enables parallel representation of diverse relationships rather than relying on a single attention distribution.
 
 4. Vanishing Gradients: RNNs vs. Transformers
 - In conventional RNNs, backpropagation through time repeatedly multiplies gradients by recurrent Jacobians. When their magnitudes are consistently below one, gradients decay exponentially, making long-range dependencies difficult to learn.
@@ -145,7 +142,7 @@ To understand Generative AI fundamentally, we must look at how machine learning 
 - Consequently, Transformers substantially mitigate long-range gradient degradation and enable parallel training across sequence positions.
 
 5. Key Limitation
-- Standard self-attention has \\(O(n^2)\\) time and memory complexity with sequence length \\(n\\), motivating efficient attention variants for long contexts.
+- Standard self-attention has (O(n^2) time and memory complexity with sequence length n, motivating efficient attention variants for long contexts.
 
 
 ### Gemini Response
