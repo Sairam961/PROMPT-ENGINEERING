@@ -73,12 +73,12 @@ Step 7: Finalize and Export
 ### ChatGPT Response
 ## Foundational Concepts of Generative AI
 
-\- 1. What is Generative AI?
+\ 1. What is Generative AI?
 - Generative Artificial Intelligence (Generative AI) is a branch of AI that learns patterns and structures from existing data to generate new content.
 - It can create text, images, audio, videos, and computer code.
 - Examples include ChatGPT for text generation and image-generation models for creating pictures from prompts.
-- 
-\- 2. How Does Generative AI Work?
+  
+\ 2. How Does Generative AI Work?
 - Generative AI models are trained on large datasets to learn the underlying patterns and relationships within the data.
 - During generation, they use these learned patterns to produce new outputs that resemble the training data.
 - Common approaches include predicting the next token in text, generating images from noise, and learning probability distributions.
